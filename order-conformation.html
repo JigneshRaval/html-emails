@@ -163,7 +163,15 @@
 				width: 100px;
 			}
 
-			.email-footer__column { width: 50% !important; display: block !important; float: left; border-right: 0px solid #FFFFFF !important; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+			.email-footer__column { 
+				width: 50% !important; 
+				display: block !important; 
+				float: left; 
+				border-right-width: 0!important; 
+				-moz-box-sizing: border-box; 
+				-webkit-box-sizing: border-box; 
+				box-sizing: border-box; 
+			}
 		}
 	</style>
 </head>
@@ -185,17 +193,40 @@
 				</table>
 			</td>
 		</tr>
-
-		<tr><td height="20"><!-- Spaccer Cell --></td></tr>
 		<!-- END :: Header Section -->
 
 		<!-- START :: Content Section -->
 		<tr>
 			<td>
-				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" align="left" class="content-section">
+					<tr>
+						<td style="border-bottom:1px solid #ccc;text-align:center;padding-top:20px;padding-bottom:20px">
+							<h1 style="text-align:center;margin:0;padding:0;font-size:32px;color:#494949;">Customer Care Survey</h1>
+						</td>
+					</tr>
+					<tr><td height="30"><!-- Spaccer Cell --></td></tr>
+					<tr>
+						<td align="left">
+							<h3 style="font-size:24px;margin:0;padding-bottom:15px;padding-top:0;color:#484848;">Hi Shivam Tiwari,</h3>
+
+							<p style="color:#484848;">Hope your problem has been resolved by our customer care successfully! We are very sorry that you had to go through the trouble to begin with. Could you please take some time to fill out the survey to let us know how we did!</p>							
+						</td>
+					</tr>
 					<tr>
 						<td>
-							<p>Content</p>
+							<ol>
+								<li>
+									<p>Did you like the way we handled your complain?</p>
+									<p>
+										<a href="#" style="text-decoration:none; display:inline-block; width:10px; height:10px; background:#ffffff; border:1px solid #c9048f; border-radius: 100%;"></a>
+										<span>Yes</span>
+									</p>
+									<p>
+										<a href="#" style="text-decoration:none; display:inline-block; width:10px; height:10px; background:#ffffff; border:1px solid #c9048f; border-radius: 100%;"></a>
+										<span>No</span>
+									</p>
+								</li>
+							</ol>
 						</td>
 					</tr>
 				</table>
@@ -213,7 +244,7 @@
 				<table width="100%">
 					<tr>
 						<td>
-							<table id="email-footer" style="background-color:#999;margin:0;padding:0;" width="100%" cellpadding="0" cellspacing="0" border="0">
+							<table id="email-footer" style="background-color:#999999;margin:0;padding:0;" width="100%" cellpadding="0" cellspacing="0" border="0">
 								<tr>
 									<td width="25%" class="email-footer__column" style="border-right:1px solid #FFFFFF;">
 
@@ -223,9 +254,11 @@
 													<!-- Content Block -->
 													<table width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
 														<tr>
-															<td style="padding-right:5px;width:30px;">
+															<td style="padding-right:5px;width:30px;text-align:center;">
 																<!--Use deep link for src attribute-->
-																<img src="images/shipping-icon.png" alt="FREE SHIPPING" style="width:28px;"/>
+																<a href="#" style="display:block;text-decoration:none;">
+																	<img src="images/shipping-icon.png" alt="FREE SHIPPING" style="width:28px;display:inline;float:none;"/>
+																</a>
 															</td>
 															<td align="left">
 																<a href="#" style="display:block;line-height:10px;text-decoration:none;">
@@ -249,9 +282,11 @@
 													<!-- Content Block -->
 													<table width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
 														<tr>
-															<td style="padding-right:5px;width:30px;">
-																<!--Use deep link for src attribute-->
-																<img src="images/returns-icon.png" alt="HASSLE FREE RETURNS" style="width:24px;" />
+															<td style="padding-right:5px;width:30px;text-align:center;">
+																<a href="#" style="display:block;text-decoration:none;">
+																	<!--Use deep link for src attribute-->
+																	<img src="images/returns-icon.png" alt="HASSLE FREE RETURNS" style="width:24px;display:inline;float:none;" />
+																</a>
 															</td>
 															<td>
 																<a href="#" style="display:block;line-height:10px;text-decoration:none;">
@@ -275,9 +310,11 @@
 													<!-- Content Block -->
 													<table width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
 														<tr>
-															<td style="padding-right:5px;width:30px;">
-																<!--Use deep link for src attribute-->
-																<img src="images/cod-icon.png" alt="CASH ON DELIVERY" style="width:16px;" />
+															<td style="padding-right:5px;width:30px;text-align:center;">
+																<a href="#" style="display:block;text-decoration:none;">
+																	<!--Use deep link for src attribute-->
+																	<img src="images/cod-icon.png" alt="CASH ON DELIVERY" style="width:16px;display:inline;float:none;" />
+																</a>
 															</td>
 															<td>
 																<a href="#" style="display:block;line-height:10px;text-decoration:none;">
@@ -301,9 +338,11 @@
 													<!-- Content Block -->
 													<table width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
 														<tr>
-															<td style="padding-right:5px;width:30px;">
-																<!--Use deep link for src attribute-->
-																<img src="images/brands-icon.png" alt="PREMIUM BRANDS" style="width:24px;" />
+															<td style="padding-right:5px;width:30px;text-align:center;">
+																<a href="#" style="display:block;text-decoration:none;">
+																	<!--Use deep link for src attribute-->
+																	<img src="images/brands-icon.png" alt="PREMIUM BRANDS" style="width:24px;display:inline;float:none;" />
+																</a>
 															</td>
 															<td>
 																<a href="#" style="display:block;line-height:10px;text-decoration:none;">
