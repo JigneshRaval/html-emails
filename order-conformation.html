@@ -270,7 +270,7 @@
 													<td align="center" style="padding: 10px;" data-th="Subtotal">Rs. 2000</td>
 												</tr>
 												<tr>
-													<td align="center" style="padding: 0px;background-color:#484848;margin:0;height:3px;" colspan="6" height="3"></td>
+													<td align="center" style="padding: 0px;margin:0;" colspan="6"><hr width="100%" size="3" style="background-color:#484848;border-width:3px;height:3px;"/></td>
 												</tr>
 											</tbody>
 										</table>
@@ -299,7 +299,7 @@
 										</table>
 										<!-- END : Bag Total Table -->
 										<br/>
-										<!-- START : Rating Table -->
+										<!-- START : Rating Table ( Option 1 - with Radio buttons , Radio buttons will not work in Outlook Web Mail )-->
 										<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e0e0e0;background-color: #EEE;">
 											<tr>
 												<td style="padding:15px;">
@@ -310,17 +310,89 @@
 												<td style="padding:15px;">
 													<table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
 														<tr>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_0" /><br/>0</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_1" /><br/>1</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_2" /><br/>2</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_3" /><br/>3</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_4" /><br/>4</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_5" /><br/>5</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_6" /><br/>6</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_7" /><br/>7</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_8" /><br/>8</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_9" /><br/>9</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_10" /><br/>10</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_0" style="cursor:pointer;" /><br/>0</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_1" style="cursor:pointer;"/><br/>1</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_2" style="cursor:pointer;"/><br/>2</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_3" style="cursor:pointer;"/><br/>3</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_4" style="cursor:pointer;"/><br/>4</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_5" style="cursor:pointer;"/><br/>5</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_6" style="cursor:pointer;"/><br/>6</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_7" style="cursor:pointer;"/><br/>7</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_8" style="cursor:pointer;"/><br/>8</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_9" style="cursor:pointer;"/><br/>9</td>
+															<td align="center"><input type="radio" name="rdRating" id="rdRating_10" style="cursor:pointer;"/><br/>10</td>
+														</tr>
+														<tr>
+															<td colspan="5">Not at all likely</td>
+															<td colspan="6" align="right" style="text-align:right;">Extremely likely</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:15px;">
+													<input type="button" style="border-width:0px;background-color:#c9048f;color:#FFFFFF;font-weight:bold;padding:10px 15px 10px 15px;margin:0;cursor:pointer;" value="SUBMIT" />
+												</td>
+											</tr>
+										</table>
+										<!-- END : Rating Table -->
+
+										<br/>
+										<!-- START : Rating Table ( Option 2 - With Links )-->
+										<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e0e0e0;background-color: #EEE;">
+											<tr>
+												<td style="padding:15px;">
+													<p style="padding:0;margin:0;">Now, could you please be a sport and tell us how likely are you to recommend abof to your friends, based on your experience with us so far? </p>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:15px;">
+													<table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
+														<tr>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;cursor:pointer;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>0</td>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;cursor:pointer;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>1</td>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>2</td>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>3</td>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>4</td>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>5</td>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>6</td>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>7</td>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>8</td>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>9</td>
+															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+																<!--Use deep link for src attribute-->
+																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+															</a><br/>10</td>
 														</tr>
 														<tr>
 															<td colspan="5">Not at all likely</td>
