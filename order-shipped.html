@@ -127,6 +127,38 @@
 			color: #fff !important;
 			background-color: #c9048f;
 		}
+		/* Responsive Table Style */		
+		.fluid-table td:before {
+			display: none;
+		}
+		.fluid-table th, .fluid-table td {
+			display: table-cell;
+		}		
+		@media only screen and (max-width: 639px) {
+			.fluid-table th {
+				display: none;
+			}
+			.fluid-table tr.item {
+				border-bottom: 1px solid #e0e0e0;
+			}
+			.fluid-table tr.item td {
+				table-layout: fixed !important;
+				float: none !important;
+				width: 100% !important;
+				padding-right: 0px !important;
+				padding-left: 0px !important;
+				display: block !important;
+			}
+			.fluid-table th, .fluid-table tr.item td {
+				text-align: left;
+			}
+			.fluid-table tr.item td:before {
+				content: attr(data-th) ": ";
+				font-weight: bold;
+				width: 12.5em;
+				display: inline-block;
+			}
+		}
 		@media only screen and (max-width: 639px) {
 			.wrapper {
 				width: 92% !important;
@@ -181,7 +213,7 @@
 								<tr>
 									<td style="border-bottom:1px solid #ccc;text-align:center;padding-top:20px;padding-bottom:20px">
 										<h1 style="text-align:center;margin:0;padding:0;font-size:32px;color:#494949;">GET EXCITED!</h1>
-										<h2 style="text-align:center;margin:0;padding:0;font-size:18px;color:#494949;">YOUR ORDER IS SHIPPED</h2>
+										<h2 style="text-align:center;margin:0;padding:0;font-size:18px;color:#494949;text-transform:uppercase;">YOUR ORDER IS SHIPPED</h2>
 									</td>
 								</tr>
 								<tr><td height="30"><!-- Spaccer Cell --></td></tr>
@@ -192,7 +224,7 @@
 								</tr>								
 								<tr>
 									<td style="padding-bottom:15px;">
-										<p style="color:#484848;margin:0;padding:0;">Your drool-box has left our dock and is rushing towards you. You can follow it around by tracking it at <a href="#">www.abof.com</a>. It will be in safe hands till it reaches you! Now sit back, relax and plan your next big fashion move.</p>
+										<p style="color:#484848;margin:0;padding:0;">Your drool-box has left our dock and is rushing towards you. You can follow it around by tracking it at <a href="http://www.abof.com" style="color:#448ccb;text-decoration:none;">www.abof.com</a>. It will be in safe hands till it reaches you! Now sit back, relax and plan your next big fashion move.</p>
 									</td>
 								</tr>
 								<tr>
@@ -201,83 +233,71 @@
 									</td>
 								</tr>
 								<tr>
-									<td style="padding:10px 0 10px 0;">
+									<td style="padding:10px 0 10px 0;border-bottom: 3px solid #484848;">
 										<p style="text-transform:uppercase;margin:0;padding:0;"><strong>Order No: XXXXX</strong></p>
 									</td>
 								</tr>
 								<tr>
-									<td style="border-top: 3px solid #484848; padding: 10px 0 10px 0;">
-										<p style="text-transform:uppercase;margin:0;padding:0;"><strong>United Colors of Benetton Men Blue & Red Checked Casual Shirt</strong></p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										
+									<td>										
 										<!-- START :: Pricing Table -->
-										<table width="100%" cellpadding="10" cellspacing="0" border="0">
+
+										<!-- START : Repeatable Section -->
+										<table width="100%" cellpadding="10" cellspacing="0" border="0" class="fluid-table" style="">
 											<thead>
 												<tr>
-													<th style="border-bottom:1px solid #e0e0e0;">Size</th>
-													<th style="border-bottom:1px solid #e0e0e0;">Quantity</th>
-													<th style="border-bottom:1px solid #e0e0e0;">Expected  Delivery Date</th>
-													<th style="border-bottom:1px solid #e0e0e0;">Price</th>
-													<th style="border-bottom:1px solid #e0e0e0;white-space:nowrap;">Discount</th>
-													<th style="border-bottom:1px solid #e0e0e0;white-space:nowrap;">Subtotal</th>
+													<th align="left" style="padding: 10px 0 10px 0;text-align:left;" colspan="6">
+														<p style="text-transform:uppercase;margin:0;padding:0;"><strong>1. United Colors of Benetton Men Blue &amp; Red Checked Casual Shirt</strong></p>
+													</th>
+												</tr>
+												<tr>
+													<th style="border-bottom:1px solid #e0e0e0;" width="10%">Size</th>
+													<th style="border-bottom:1px solid #e0e0e0;" width="15%">Quantity</th>
+													<th style="border-bottom:1px solid #e0e0e0;" width="30%">Expected  Delivery Date</th>
+													<th style="border-bottom:1px solid #e0e0e0;" width="15%">Price</th>
+													<th style="border-bottom:1px solid #e0e0e0;white-space:nowrap;" width="15%">Discount</th>
+													<th style="border-bottom:1px solid #e0e0e0;white-space:nowrap;" width="15%">Subtotal</th>
 												</tr>
 											</thead>
 											<tbody>
-												<tr>
-													<td align="center" style="padding: 10px;">46</td>
-													<td align="center" style="padding: 10px;">1</td>
-													<td align="center" style="padding: 10px;">5th June 2015</td>
-													<td align="center" style="padding: 10px;">Rs. 2299</td>
-													<td align="center" style="padding: 10px;">Rs. 299</td>
-													<td align="center" style="padding: 10px;">Rs. 2000</td>
+												<tr class="item">
+													<td align="center" style="padding: 10px;" data-th="Size">46</td>
+													<td align="center" style="padding: 10px;" data-th="Quantity">1</td>
+													<td align="center" style="padding: 10px;" data-th="Expected  Delivery Date">5th June 2015</td>
+													<td align="center" style="padding: 10px;" data-th="Price">Rs. 2299</td>
+													<td align="center" style="padding: 10px;" data-th="Discount">Rs. 299</td>
+													<td align="center" style="padding: 10px;" data-th="Subtotal">Rs. 2000</td>
 												</tr>
 												<tr>
-													<td align="center" style="padding: 10px;border-bottom: 3px solid #484848;"></td>
-													<td align="center" style="padding: 10px;border-bottom: 3px solid #484848;"></td>
-													<td align="center" style="padding: 10px;border-bottom: 3px solid #484848;"></td>
-													<td align="center" style="padding: 10px;border-bottom: 3px solid #484848;"></td>
-													<td align="center" style="padding: 10px;border-bottom: 3px solid #484848;"></td>
-													<td align="center" style="padding: 10px;border-bottom: 3px solid #484848;"></td>
-												</tr>
-												<tr>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="right" style="padding: 5px;">Subtotal</td>
-													<td align="center" style="padding: 5px;">Rs. 2000</td>
-												</tr>
-												<tr>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="right" style="padding: 5px;white-space:nowrap;">Cart Discount</td>
-													<td align="center" style="padding: 5px;">Rs. 1000</td>
-												</tr>
-												<tr>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="center" style="padding: 5px;"></td>
-													<td align="right" style="padding: 5px;white-space:nowrap;">Coupon Discount</td>
-													<td align="center" style="padding: 5px;">Rs. 100</td>
-												</tr>
-												<tr>
-													<td align="center" style="padding: 10px;"></td>
-													<td align="center" style="padding: 10px;"></td>
-													<td align="center" style="padding: 10px;"></td>
-													<td align="center" style="padding: 10px;"></td>
-													<td align="right" style="padding: 10px;"><strong>Bag Total</strong></td>
-													<td align="center" style="padding: 10px;"><strong>Rs. 900</strong></td>
+													<td align="center" style="padding: 0px;background-color:#484848;margin:0;height:3px;" colspan="6" height="3"></td>
 												</tr>
 											</tbody>
-										</table>							
-										<!-- END :: Pricing Table -->
+										</table>
+										<!-- END : Repeatable Section -->
 
+										<!-- START : Grand Total Table -->
+										<table width="100%" cellpadding="10" cellspacing="0" border="0" style="">
+											<tr>
+												<td align="center" style="padding: 0px;height:15px;" colspan="6" height="15"></td>
+											</tr>
+											<tr>
+												<td align="right" style="padding: 5px;white-space:nowrap;" colspan="5" width="85%">Subtotal</td>
+												<td align="center" style="padding: 5px;white-space:nowrap;" width="15%">Rs. 2000</td>
+											</tr>
+											<tr>
+												<td align="right" style="padding: 5px;white-space:nowrap;" colspan="5" width="85%">Additional Discount</td>
+												<td align="center" style="padding: 5px;white-space:nowrap;" width="15%">(-) Rs. 100</td>
+											</tr>
+											<tr>
+												<td colspan="6" height="15" style="padding:0px;height:15px;"></td>
+											</tr>
+											<tr>
+												<td align="right" style="padding: 5px;white-space:nowrap;text-transform: uppercase;" colspan="5" width="85%"><strong>Bag Total</strong></td>
+												<td align="center" style="padding: 5px;white-space:nowrap;" width="15%"><strong>Rs. 900</strong></td>
+											</tr>
+										</table>
+										<!-- END : Bag Total Table -->
+
+										<!-- END :: Pricing Table -->
 									</td>
 								</tr>
 							</table>
