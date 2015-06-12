@@ -1,144 +1,51 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width"/>
-	<style>
-		#outlook a {
-			padding:0;
-		}
-		body{
-			width:100% !important;
-			min-width: 100%;
-			-webkit-text-size-adjust:100%;
-			-ms-text-size-adjust:100%;
-			margin:0;
-			padding:0;
-		}
-		.ExternalClass {
-			width:100%;
-		}
-		.ExternalClass,
-		.ExternalClass p,
-		.ExternalClass span,
-		.ExternalClass font,
-		.ExternalClass td,
-		.ExternalClass div {
-			line-height: 100%;
-		}
-		#backgroundTable {
-			margin:0;
-			padding:0;
-			width:100% !important;
-			line-height: 100% !important;
-		}
-		img {
-			outline:none;
-			text-decoration:none;
-			-ms-interpolation-mode: bicubic;
-			width: auto;
-			max-width: 100%;
-			float: left;
-			clear: both;
-			display: block;
-		}
-		center {
-			width: 100%;
-			min-width: 580px;
-		}
-		a img {
-			border: none;
-		}
-		p {
-			margin: 0 0 0 10px;
-		}
-		table {
-			border-spacing: 0;
-			border-collapse: collapse;
-		}
-		td {
-			word-break: break-word;
-			-webkit-hyphens: auto;
-			-moz-hyphens: auto;
-			hyphens: auto;
-			border-collapse: collapse !important;
-		}
-		table, tr, td {
-			padding: 0;
-			vertical-align: middle;
-			/*text-align: left;*/
-		}
-		hr {
-			color: #d9d9d9;
-			background-color: #d9d9d9;
-			height: 1px;
-			border: none;
-		}
-		/* Typography */
-		body, table.body, h1, h2, h3, h4, h5, h6, p, td {
-			color: #222222;
-			font-family: "Helvetica", "Arial", sans-serif;
-			font-weight: normal;
-			padding:0;
-			margin: 0;
-			/*text-align: left;*/
-			line-height: 1.3;
-		}
-		h1, h2, h3, h4, h5, h6 {
-			word-break: normal;
-		}
-		h1 {font-size: 40px;}
-		h2 {font-size: 36px;}
-		h3 {font-size: 32px;}
-		h4 {font-size: 28px;}
-		h5 {font-size: 24px;}
-		h6 {font-size: 20px;}
-		body, table, p, td {font-size: 14px;line-height:19px;}
-		p {
-			margin-bottom: 10px;
-		}
-		small {
-			font-size: 10px;
-		}
-		a {
-			color: #c9048f;
-			text-decoration: none;
-		}
-		a:hover {
-			color: #c9048f !important;
-		}
-		a:active {
-			color: #c9048f !important;
-		}
-		a:visited {
-			color: #c9048f !important;
-		}
-		.wrapper {
-			width: 640px;
-			/*margin: 0 auto;*/
-		}
-		.primary-button {
-			border: 1px solid #c9048f;
-			color: #c9048f;
-			border-radius: 4px;
-			padding:10px 20px;
-		}
-		.primary-button:hover {
-			color: #fff !important;
-			background-color: #c9048f;
-		}
-		/* Responsive Table Style */		
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width"/>
+		<style>
+			#outlook a {
+				padding:0;
+			}
+			.ExternalClass {
+				width:100%;
+			}
+			.ExternalClass,
+			.ExternalClass p,
+			.ExternalClass span,
+			.ExternalClass font,
+			.ExternalClass td,
+			.ExternalClass div {
+				line-height: 100%;
+			}
+			#backgroundTable {
+				margin:0;
+				padding:0;
+				width:100% !important;
+				line-height: 100% !important;
+			}
+			a:hover {
+				color: #c9048f !important;
+			}
+			a:active {
+				color: #c9048f !important;
+				}
+			a:visited {
+				color: #c9048f !important;
+			}
+			.wrapper {width: 640px;}
+					/* Responsive Table Style */
 		.fluid-table td:before {
 			display: none;
 		}
 		.fluid-table th, .fluid-table td {
 			display: table-cell;
-		}		
+				}
 		@media only screen and (max-width: 639px) {
 			.fluid-table th {
 				display: none;
 			}
-			.fluid-table tr.item:last-child, .fluid-table tr.item.last {
+			.fluid-table tr.item {
 				border-bottom: 1px solid #e0e0e0;
 			}
 			.fluid-table tr.item td {
@@ -159,411 +66,424 @@
 				display: inline-block;
 			}
 		}
-		@media only screen and (max-width: 639px) {
-			.wrapper {
-				width: 92% !important;
+			@media only screen and (max-width: 639px) {
+				.wrapper {
+					width: 92% !important;
+				}
+				.logo {
+					width: 100px;
+				}
+				.email-footer-column {
+					width: 50% !important;
+					display: block !important;
+					float: left;
+					border-right-width: 0px !important;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+				.email-footer-column-even {
+					padding-left: 0px !important;
+				}
 			}
-
-			.logo {
-				width: 100px;
-			}
-			.email-footer-column {
-				width: 50% !important;
-				display: block !important;
-				float: left;
-				border-right-width: 0px !important;
-				-moz-box-sizing: border-box;
-				-webkit-box-sizing: border-box;
-				box-sizing: border-box;
-			}
-			.email-footer-column-even {
-				padding-left: 0px !important;
-			}
-		}
-	</style>
-</head>
-<body>
-
-	<table width="100%" cellpadding="0" cellspacing="0" border="0">
-		<tr>
-			<td style="padding-top:20px;">
-
-				<!-- START :: Main Body -->
-				<table class="wrapper" width="640" cellpadding="0" cellspacing="0" border="0" style="margin:auto;">
-					
-					<tr>
-						<td>
-							<!-- START :: Header Section -->
-							<table class="header-section" width="100%" cellpadding="0" cellspacing="0" border="0">
-								<tr style="border-bottom:1px solid #ccc;">
-									<td style="padding-bottom:20px;">
-										<!--Use deep link for src attribute-->
-										<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/abof-logo.png" class="logo" alt="ABOF LOGO"/>
-									</td>
-								</tr>
-							</table>
-							<!-- END :: Header Section -->
-						</td>
-					</tr>					
-					
-					<tr>
-						<td>
-							<!-- START :: Content Section -->
-							<table class="content-section" width="100%" cellpadding="0" cellspacing="0" border="0" align="left" >
-								<tr>
-									<td style="border-bottom:1px solid #ccc;text-align:center;padding-top:20px;padding-bottom:20px">
-										<h1 style="text-align:center;margin:0;padding:0;font-size:32px;color:#494949;">GET SET RIPPIN'!</h1>
-										<h2 style="text-align:center;margin:0;padding:0;font-size:18px;color:#494949;text-transform:uppercase;">YOU'VE GOT YOUR HANDS FULL OF COOL</h2>
-									</td>
-								</tr>
-								<tr><td height="30"><!-- Spaccer Cell --></td></tr>
-								<tr>
-									<td align="left">
-										<h3 style="font-size:24px;margin:0;padding-bottom:15px;padding-top:0;color:#484848;">Hi Shivam Tiwari,</h3>										
-									</td>
-								</tr>								
-								<tr>
-									<td style="padding-bottom:15px;">
-										<p style="color:#484848;margin:0;padding:0;">Unwrapped. Tried. Loved. We're sure you had fun doing all this with your items! We're gonna leave you in peace to admire your box-of-drool some more. Come back to us at <a href="http://www.abof.com" style="color:#448ccb;text-decoration:none;">www.abof.com</a>, the next time you're planning your big fashion move.</p>
-									</td>
-								</tr>
-								<tr>
-									<td style="padding-bottom:15px;">
-										<p style="color:#484848;margin:0;padding:0;">Meanwhile, WEAR . IT . WELL .</p>
-									</td>
-								</tr>
-								<tr>
-									<td style="padding:10px 0 10px 0;border-bottom: 3px solid #484848;">
-										<p style="color:#484848;margin:0;padding:0;text-transform:uppercase;"><strong>Shipment Number: XXXX</strong></p>
-									</td>
-								</tr>
-								<tr>
-									<td>										
-										<!-- START :: Pricing Table -->
-
-										<!-- START : Repeatable Section -->
-										<table width="100%" cellpadding="10" cellspacing="0" border="0" class="fluid-table" style="">
-											<thead>
-												<tr>
-													<th align="left" style="padding: 10px 0 10px 0;text-align:left;" colspan="5">
-														<p style="text-transform:uppercase;margin:0;padding:0;"><strong>1. United Colors of Benetton Men Blue &amp; Red Checked Casual Shirt</strong></p>
-													</th>
-												</tr>
-												<tr>
-													<th style="border-bottom:1px solid #e0e0e0;" width="20%">Size</th>
-													<th style="border-bottom:1px solid #e0e0e0;" width="20%">Quantity</th>
-													<th style="border-bottom:1px solid #e0e0e0;" width="20%">Price</th>
-													<th style="border-bottom:1px solid #e0e0e0;white-space:nowrap;" width="20%">Discount</th>
-													<th style="border-bottom:1px solid #e0e0e0;white-space:nowrap;" width="20%">Subtotal</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr class="item">
-													<td align="center" style="padding: 10px;" data-th="Size">46</td>
-													<td align="center" style="padding: 10px;" data-th="Quantity">1</td>
-													<td align="center" style="padding: 10px;" data-th="Price">Rs. 2299</td>
-													<td align="center" style="padding: 10px;" data-th="Discount">Rs. 299</td>
-													<td align="center" style="padding: 10px;" data-th="Subtotal">Rs. 2000</td>
-												</tr>
-												<tr>
-													<td align="center" style="padding: 0px;margin:0;" colspan="5"><hr width="100%" size="2" style="background-color:#484848;border:0;height:2px;" noshade/></td>
-												</tr>
-											</tbody>
-										</table>
-										<!-- END : Repeatable Section -->
-
-										<!-- START : Grand Total Table -->
-										<table width="100%" cellpadding="10" cellspacing="0" border="0" style="table-layout:fixed;">
-											<tr>
-												<td align="center" style="padding: 0px;height:15px;" colspan="5" height="15"></td>
+		</style>
+	</head>
+	<body style="width:100% !important;min-width: 100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;line-height: 1.3;">
+		<!-- START :: Main Body -->
+		<table width="100%" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" cellpadding="0" cellspacing="0" border="0">
+			<tr style="padding: 0;vertical-align: middle;">
+				<td style="padding: 0;padding-top:20px;font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;
+					">
+					<!-- END :: Header Section -->
+					<table class="wrapper" align="center" width="640" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;line-height: 1.3;margin:auto;" cellpadding="0" cellspacing="0" border="0">
+						<tr style="padding: 0;vertical-align: middle;">
+							<td style="border-bottom:1px solid #ccc;font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+								<table width="100%" cellpadding="0" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" cellspacing="0" border="0">
+									<tr style="padding: 0;vertical-align: middle;">
+										<td style="padding: 0;padding-bottom:20px;font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+											<!--Use deep link for src attribute-->
+											<a href="http://www.abof.com" style="color: #c9048f;text-decoration: none;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/abof-logo.png" style="outline:none;text-decoration:none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;" class="logo" alt="ABOF LOGO"/></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!-- END :: Header Section -->
+				</td>
+			</tr>
+			<tr style="padding: 0;vertical-align: middle;">
+				<td style="padding: 0;padding-top:20px;font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+					<!-- START :: Content Section -->
+					<table class="wrapper" align="center" width="640" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;line-height: 1.3;margin:auto;" cellpadding="0" cellspacing="0" border="0">
+						<tr style="padding: 0;vertical-align: middle;">
+							<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;border-bottom:1px solid #ccc;text-align:center;padding-bottom:20px;">
+								<h1 style="color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin: 0;line-height: 1.3;word-break: normal;text-align:center;margin:0;padding:0;font-size:32px;color:#494949;">GET SET RIPPIN'!</h1>
+								<h3 style="color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin: 0;line-height: 1.3;word-break: normal;text-align:center;margin:0;padding:0;font-size:16px;color:#494949;">YOU'VE GOT YOUR HANDS FULL OF COOL</h3>
+							</td>
+						</tr>
+						<tr style="padding: 0;vertical-align: middle;">
+							<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" height="20"><!-- Spaccer Cell --></td>
+						</tr>
+						<tr style="padding: 0;vertical-align: middle;">
+							<td align="left" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+								<h3 style="color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin: 0;line-height: 1.3;word-break: normal;font-size:24px;margin:0;color:#484848;">Hi Shivam Tiwari,</h3>
+							</td>
+						</tr>
+						<tr style="padding: 0;vertical-align: middle;">
+							<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" height="15"><!-- Spaccer Cell --></td>
+						</tr>
+						<tr style="padding: 0;vertical-align: middle;">
+							<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+								<p style="font-size: 14px;line-height:19px;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin:0;margin-bottom: 10px;line-height: 1.3;color:#484848;">
+									Unwrapped. Tried. Loved. We're sure you had fun doing all this with your order! We're gonna leave you in peace to admire your box-of-drool some more. Come back to us at <a href="http://www.abof.com" style="color:#448ccb;text-decoration:none;">www.abof.com</a>, the next time you're planning your big fashion move.</p>
+									<p style="font-size: 14px;line-height:19px;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin:0;margin-bottom: 20px;line-height: 1.3;color:#484848;">
+									Meanwhile, WEAR. IT. WELL.</p>
+								</td>
+							</tr>
+							<tr style="padding: 0;vertical-align: middle;">
+								<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:10px 0 10px 0;border-top:1px solid #CCCCCC;border-bottom:1px solid #CCCCCC;">
+									<p style="font-size: 14px;line-height:19px;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin:0;line-height: 1.3;text-transform:uppercase;"><strong>Shipment Number: XXXX</strong></p>
+								</td>
+							</tr>
+							<!-- START :: Pricing Table -->
+							<!-- START : Repeatable Section -->
+							<tr style="padding: 0;vertical-align: middle;">
+								
+								<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;border-bottom: 2px solid #484848;">
+									<table width="100%" cellpadding="10" cellspacing="0" border="0" class="fluid-table" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+										<thead>
+											<tr style="padding: 0;vertical-align: middle;">
+												<th align="left" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px 0 10px 0;text-align:left;" colspan="5">
+													<p style="font-size: 14px;line-height:19px;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin:0;line-height: 1.3;text-transform:uppercase;"><strong>1. United Colors of Benetton Men Blue &amp; Red Checked Casual Shirt</strong></p>
+												</th>
 											</tr>
-											<tr>
-												<td align="right" style="padding: 5px;white-space:nowrap;" colspan="4" width="80%">Subtotal</td>
-												<td align="center" style="padding: 5px;white-space:nowrap;" width="15%">Rs. 2000</td>
+											<tr style="padding: 0;vertical-align: middle;">
+												<th style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: bold;margin: 0;line-height: 1.3;border-bottom:1px solid #e0e0e0;padding:10px;" width="20%">Size</th>
+												<th style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: bold;margin: 0;line-height: 1.3;border-bottom:1px solid #e0e0e0;padding:10px;" width="20%">Quantity</th>
+												<th style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: bold;margin: 0;line-height: 1.3;border-bottom:1px solid #e0e0e0;padding:10px;" width="20%">Price</th>
+												<th style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: bold;margin: 0;line-height: 1.3;border-bottom:1px solid #e0e0e0;white-space:nowrap;padding:10px;" width="20%">Discount</th>
+												<th style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: bold;margin: 0;line-height: 1.3;border-bottom:1px solid #e0e0e0;white-space:nowrap;padding:10px;" width="20%">Subtotal</th>
 											</tr>
-											<tr>
-												<td align="right" style="padding: 5px;white-space:nowrap;" colspan="4" width="80%">Additional Discount</td>
-												<td align="center" style="padding: 5px;white-space:nowrap;" width="20%">(-) Rs. 100</td>
+										</thead>
+										<tbody>
+											<tr class="item">
+												<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px;" data-th="Size">46</td>
+												<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px;" data-th="Quantity">1</td>
+												<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px;" data-th="Price">Rs. 2299</td>
+												<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px;" data-th="Discount">Rs. 299</td>
+												<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px;" data-th="Subtotal">Rs. 2000</td>
 											</tr>
-											<tr>
-												<td colspan="5" height="15" style="padding:0px;height:15px;"></td>
+										</tbody>
+									</table>
+								</td>
+								
+							</tr>
+							<!-- END : Repeatable Section -->
+							<!-- START : Repeatable Section -->
+							<tr style="padding: 0;vertical-align: middle;">
+								
+								<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;border-bottom: 2px solid #484848;">
+									<table width="100%" cellpadding="10" cellspacing="0" border="0" class="fluid-table" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+										<thead>
+											<tr style="padding: 0;vertical-align: middle;">
+												<th align="left" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px 0 10px 0;text-align:left;" colspan="5">
+													<p style="font-size: 14px;line-height:19px;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin:0;line-height: 1.3;text-transform:uppercase;"><strong>2. United Colors of Benetton Men Blue &amp; Red Checked Casual Shirt</strong></p>
+												</th>
 											</tr>
-											<tr>
-												<td align="right" style="padding: 5px;white-space:nowrap;text-transform: uppercase;" colspan="4" width="85%"><strong>Total Amount</strong></td>
-												<td align="center" style="padding: 5px;white-space:nowrap;" width="15%"><strong>Rs. 900</strong></td>
+											<tr style="padding: 0;vertical-align: middle;">
+												<th style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: bold;margin: 0;line-height: 1.3;border-bottom:1px solid #e0e0e0;padding:10px;" width="20%">Size</th>
+												<th style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: bold;margin: 0;line-height: 1.3;border-bottom:1px solid #e0e0e0;padding:10px;" width="20%">Quantity</th>
+												<th style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: bold;margin: 0;line-height: 1.3;border-bottom:1px solid #e0e0e0;padding:10px;" width="20%">Price</th>
+												<th style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: bold;margin: 0;line-height: 1.3;border-bottom:1px solid #e0e0e0;white-space:nowrap;padding:10px;" width="20%">Discount</th>
+												<th style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: bold;margin: 0;line-height: 1.3;border-bottom:1px solid #e0e0e0;white-space:nowrap;padding:10px;" width="20%">Subtotal</th>
 											</tr>
-										</table>
-										<!-- END : Grand Total Table -->
-										<br/>
-										<!-- START : Rating Table ( Option 1 - with Radio buttons , Radio buttons will not work in Outlook Web Mail )-->
-										<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e0e0e0;background-color: #EEE;">
-											<tr>
-												<td style="padding:15px;">
-													<p style="padding:0;margin:0;">Now, could you please be a sport and tell us how likely are you to recommend abof to your friends based on your order delivery experience with us?</p>
-												</td>
+										</thead>
+										<tbody>
+											<tr class="item">
+												<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px;" data-th="Size">46</td>
+												<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px;" data-th="Quantity">1</td>
+												<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px;" data-th="Price">Rs. 2299</td>
+												<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px;" data-th="Discount">Rs. 299</td>
+												<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 10px;" data-th="Subtotal">Rs. 2000</td>
 											</tr>
-											<tr>
-												<td style="padding:15px;">
-													<table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
-														<tr>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_0" style="cursor:pointer;" /><br/>0</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_1" style="cursor:pointer;"/><br/>1</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_2" style="cursor:pointer;"/><br/>2</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_3" style="cursor:pointer;"/><br/>3</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_4" style="cursor:pointer;"/><br/>4</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_5" style="cursor:pointer;"/><br/>5</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_6" style="cursor:pointer;"/><br/>6</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_7" style="cursor:pointer;"/><br/>7</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_8" style="cursor:pointer;"/><br/>8</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_9" style="cursor:pointer;"/><br/>9</td>
-															<td align="center"><input type="radio" name="rdRating" id="rdRating_10" style="cursor:pointer;"/><br/>10</td>
-														</tr>
-														<tr>
-															<td colspan="5">Not at all likely</td>
-															<td colspan="6" align="right" style="text-align:right;">Extremely likely</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-											<tr>
-												<td style="padding:15px;">
-													<input type="button" style="border-width:0px;background-color:#c9048f;color:#FFFFFF;font-weight:bold;padding:10px 15px 10px 15px;margin:0;cursor:pointer;" value="SUBMIT" />
-												</td>
-											</tr>
-										</table>
-										<!-- END : Rating Table -->
-
-										<br/>
-										<!-- START : Rating Table ( Option 2 - With Links )-->
-										<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e0e0e0;background-color: #EEE;">
-											<tr>
-												<td style="padding:15px;">
-													<p style="padding:0;margin:0;">Now, could you please be a sport and tell us how likely are you to recommend abof to your friends based on your order delivery experience with us?</p>
-												</td>
-											</tr>
-											<tr>
-												<td style="padding:15px;">
-													<table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
-														<tr>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;cursor:pointer;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>0</td>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;cursor:pointer;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>1</td>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>2</td>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>3</td>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>4</td>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>5</td>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>6</td>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>7</td>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>8</td>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>9</td>
-															<td align="center"><a href="#" style="text-decoration:none; display:inline-block;">
-																<!--Use deep link for src attribute-->
-																<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
-															</a><br/>10</td>
-														</tr>
-														<tr>
-															<td colspan="5">Not at all likely</td>
-															<td colspan="6" align="right" style="text-align:right;">Extremely likely</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</table>
-										<!-- END : Rating Table -->
-										<!-- END :: Pricing Table -->
-									</td>
-								</tr>
-							</table>
-							<!-- END :: Content Section -->
-						</td>
-					</tr>
-					
-					<tr><td height="20"><!-- Spaccer Cell --></td></tr>
-
-					<tr>
-						<td align="left">
-							<table width="100%" cellpadding="0" cellspacing="0" border="0">
-								<tr>
-									<td align="left">
-										<p style="font-weight: 500;padding-top:10px;padding-bottom:10px;border-top:1px solid #ccc;margin:0;">Team ABOF</p>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-				</table>
-
-				<!-- START :: Footer Section -->
-				<table width="100%" cellpadding="0" cellspacing="0" border="0">
-					<tr>
-						<td>
-
-							<!-- START :: Footer Gray Bar -->
-							<table style="background-color:#999999;padding:0;" width="100%" cellpadding="0" cellspacing="0" border="0">
-								<tr>
-									<td>
-										<table class="wrapper" align="center" width="640" style="margin: auto;" cellpadding="0" cellspacing="0" border="0">
-											<tr>
-												<td width="25%" class="email-footer-column" style="border-right:1px solid #FFFFFF;">
-													<table width="100%" cellpadding="0" cellspacing="0" border="0">
-														<tr>
-															<td style="padding:10px 10px 10px 0px;">
-																<!-- Content Block -->
-																<table width="100%" cellpadding="0" cellspacing="0" border="0">
-																	<tr>
-																		<td style="padding-right:5px;width:30px;text-align:center;">
-																			<!--Use deep link for src attribute-->
-																			<a href="#" style="text-decoration:none;display:block;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/shipping-icon.png" alt="free shipping" style="width:28px;display:inline;float:none;"/></a>
-																		</td>
-																		<td><h4 style="font-size:11px;color:#FFFFFF;font-weight:bold;margin:0;padding:0;">FREE SHIPPING</h4><span style="font-size:10px;line-height:10px;display:block;color:#FFFFFF;">All shippings on Weekdays</span></td>
-																	</tr>
-																</table>
-																<!-- Content Block -->
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td width="25%" class="email-footer-column" style="border-right:1px solid #FFFFFF;">
-													<table width="100%" cellpadding="0" cellspacing="0" border="0">
-														<tr>
-															<td style="padding:10px;">
-																<!-- Content Block -->
-																<table width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
-																	<tr>
-																		<td style="padding-right:5px;width:30px;text-align:center;">
-																			<!--Use deep link for src attribute-->
-																			<a href="#" style="text-decoration:none;display:block;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/returns-icon.png" alt="hassle free returns" style="width:24px;display:inline;float:none;" /></a>
-																		</td>
-																		<td><h4 style="font-size:11px;color:#FFFFFF;font-weight:bold;margin:0;padding:0;">HASSLE FREE RETURNS</h4><span style="font-size:10px;display:block;line-height:10px;color:#FFFFFF;"><a href="#" style="color:#FFFFFF!important;text-decoration:none!important;text-align:left;">Click here</a> to return an item</span></td>
-																	</tr>
-																</table>
-																<!-- Content Block -->
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td width="25%" class="email-footer-column" style="border-right:1px solid #FFFFFF;">
-													<table width="100%" cellpadding="0" cellspacing="0" border="0">
-														<tr>
-															<td style="padding:10px;" class="email-footer-column-even">
-																<!-- Content Block -->
-																<table width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
-																	<tr>
-																		<td style="padding-right:5px;width:30px;text-align:center;">
-																			<!--Use deep link for src attribute-->
-																			<a href="#" style="text-decoration:none;display:block;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/cod-icon.png" alt="cash on delivery" style="width:16px;display:inline;float:none;" /></a>
-																		</td>
-																		<td><h4 style="font-size:11px;color:#FFFFFF;font-weight:bold;margin:0;padding:0;">CASH ON DELIVERY</h4><span style="font-size:10px;line-height:10px;display:block;color:#FFFFFF;">Check COD Schedules</span></td>
-																	</tr>
-																</table>
-																<!-- Content Block -->
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td width="25%" class="email-footer-column">
-													<table width="100%" cellpadding="0" cellspacing="0" border="0">
-														<tr>
-															<td style="padding:10px 0px 10px 10px;">
-																<!-- Content Block -->
-																<table width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
-																	<tr>
-																		<td style="padding-right:5px;width:30px;text-align:center;">
-																			<!--Use deep link for src attribute-->
-																			<a href="#" style="text-decoration:none;display:block;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/brands-icon.png" alt="premium brands" style="width:24px;display:inline;float:none;" /></a>
-																		</td>
-																		<td><h4 style="font-size:11px;color:#FFFFFF;font-weight:bold;margin:0;padding:0;">PREMIUM BRANDS</h4><span style="font-size:10px;line-height:10px;display:block;color:#FFFFFF;">Check our Exclusive Collections</span></td>
-																	</tr>
-																</table>
-																<!-- Content Block -->
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-							<!-- END :: Footer Gray Bar -->
-
-						</td>
-					</tr>
-
-					<tr>
-						<td align="center">
-							<!-- START :: Social Icons Section -->
-							<table width="100%" cellpadding="0" cellspacing="0" border="0">
-								<tr>
-									<td align="center">
-										<h4 style="color: #696a6d;font-size: 18px;font-weight: 500;text-align:center;padding-top:20px;padding-bottom:5px;margin:0;">FOLLOW US ON</h4>
-									</td>
-								</tr>
-							</table>
-
-							<table cellpadding="5" cellspacing="0" border="0" align="center">
-								<tr>
-									<td align="center" style="padding:5px;">
-										<!-- Facebook Link -->
-										<a href="#" title="Facebook" style="text-decoration:none;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/fb-icon.png" alt="" width="36" height="36" /></a>
-									</td>
-									<td align="center" style="padding:5px;">
-										<!-- Twitter Link -->
-										<a href="#" title="Tweeter"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/tweet-icon.png" alt="" width="36" height="36" /></a>
-									</td>
-									<td align="center" style="padding:5px;">
-										<!-- Link for Google Plus -->
-										<a href="#" title="Google Plus"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/gplus-icon.png" alt="" width="36" height="36" /></a>
-									</td>
-									<td align="center" style="padding:5px;">
-										<!-- Instagram Link -->
-										<a href="#" title="Instagram"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/insta-icon.png" alt="" width="36" height="36" /></a>
-									</td>
-									<td align="center" style="padding:5px;">
-										<!-- YouTube Link -->
-										<a href="#" title="YouTube"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/yt-icon.png" alt="" width="36" height="36" /></a>
-									</td>
-								</tr>
-							</table>
-							<!-- END :: Social Icons Section -->
-						</td>
-					</tr>					
-				</table>
-				<!-- END :: Footer Section -->
-				<!-- END :: Main Body -->
-
-			</td>
-		</tr>
-	</table>
-
-</body>
-</html>
+										</tbody>
+									</table>
+								</td>
+								
+							</tr>
+							<!-- END : Repeatable Section -->
+							<!-- START : Grand Total Section -->
+							<tr style="padding: 0;vertical-align: middle;">
+								<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+									<table width="100%" cellpadding="10" cellspacing="0" border="0" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+										<tr style="padding: 0;vertical-align: middle;">
+											<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 0px;height:20px;" colspan="6" height="20"></td>
+										</tr>
+										<tr style="padding: 0;vertical-align: middle;">
+											<td align="right" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 5px;white-space:nowrap;" colspan="5" width="85%">Subtotal</td>
+											<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 5px;white-space:nowrap;" width="15%">Rs. 2000</td>
+										</tr>
+										<tr style="padding: 0;vertical-align: middle;">
+											<td align="right" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 5px;white-space:nowrap;" colspan="5" width="85%">Additional Discount</td>
+											<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 5px;white-space:nowrap;" width="15%">(-) Rs. 100</td>
+										</tr>
+										<tr style="padding: 0;vertical-align: middle;">
+											<td align="right" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 5px;white-space:nowrap;text-transform: uppercase;padding-bottom:20px;" colspan="5" width="85%"><strong>Bag Total</strong></td>
+											<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding: 5px;white-space:nowrap;padding-bottom:20px;" width="15%"><strong>Rs. 900</strong></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- END : Grand Total Section -->
+							<!-- END :: Pricing Table -->
+							<tr style="padding: 0;vertical-align: middle;">
+								<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+									<!-- START : Rating Table ( Option 1 - with Radio buttons , Radio buttons will not work in Outlook Web Mail )-->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e0e0e0;background-color: #EEE;">
+										<tr style="padding: 0;vertical-align: middle;">
+											<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:15px;">
+												<p style="font-size: 14px;line-height:19px;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin:0;line-height: 1.3;">Now, could you please be a sport and tell us how likely are you to recommend abof to your friends based on your order delivery experience with us?</p>
+											</td>
+										</tr>
+										<tr style="padding: 0;vertical-align: middle;">
+											<td style="padding:15px;">
+												<table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
+													<tr style="padding: 0;vertical-align: middle;">
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_0" style="cursor:pointer;" /><br/>0</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_1" style="cursor:pointer;"/><br/>1</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_2" style="cursor:pointer;"/><br/>2</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_3" style="cursor:pointer;"/><br/>3</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_4" style="cursor:pointer;"/><br/>4</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_5" style="cursor:pointer;"/><br/>5</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_6" style="cursor:pointer;"/><br/>6</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_7" style="cursor:pointer;"/><br/>7</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_8" style="cursor:pointer;"/><br/>8</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_9" style="cursor:pointer;"/><br/>9</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><input type="radio" name="rdRating" id="rdRating_10" style="cursor:pointer;"/><br/>10</td>
+													</tr>
+													<tr style="padding: 0;vertical-align: middle;">
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" colspan="5">Not at all likely</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" colspan="6" align="right" style="text-align:right;">Extremely likely</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr style="padding: 0;vertical-align: middle;">
+											<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:15px;">
+												<input type="button" style="border-width:0px;background-color:#c9048f;color:#FFFFFF;font-weight:bold;padding:10px 15px 10px 15px;margin:0;cursor:pointer;" value="SUBMIT" />
+											</td>
+										</tr>
+									</table>
+									<!-- END : Rating Table -->
+									<br/>
+									<!-- START : Rating Table ( Option 2 - With Links )-->
+									<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #e0e0e0;background-color: #EEE;">
+										<tr style="padding: 0;vertical-align: middle;">
+											<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:15px;">
+												<p style="font-size: 14px;line-height:19px;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin:0;line-height: 1.3;">Now, could you please be a sport and tell us how likely are you to recommend abof to your friends based on your order delivery experience with us?</p>
+											</td>
+										</tr>
+										<tr style="padding: 0;vertical-align: middle;">
+											<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:15px;">
+												<table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
+													<tr style="padding: 0;vertical-align: middle;">
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;cursor:pointer;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>0</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;cursor:pointer;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>1</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>2</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>3</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>4</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>5</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>6</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>7</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>8</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>9</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" align="center"><a href="#" style="text-decoration:none; display:inline-block;">
+															<!--Use deep link for src attribute-->
+															<img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/radio.png" alt="yes"/>
+														</a><br/>10</td>
+													</tr>
+													<tr style="padding: 0;vertical-align: middle;">
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" colspan="5">Not at all likely</td>
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;" colspan="6" align="right" style="text-align:right;">Extremely likely</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<!-- END : Rating Table -->
+									<br/>
+								</td>
+							</tr>
+						</table>
+						<!-- END :: Content Section -->
+					</td>
+				</tr>
+				<tr style="padding: 0;vertical-align: middle;">
+					<td style="padding: 0;font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+						<!-- END :: Footer Section -->
+						<table class="wrapper" align="center" width="640" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;line-height: 1.3;margin:auto;" cellpadding="0" cellspacing="0" border="0">
+							<tr style="padding: 0;vertical-align: middle;">
+								<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;border-top:1px solid #ccc;">
+									<p style="font-size: 14px;line-height:19px;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin:0;margin-bottom: 10px;margin-top: 10px;line-height: 1.3;">Team ABOF</p>
+								</td>
+							</tr>
+						</table>
+						<!-- STRAT :: Footer Ads Section -->
+						<table style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;background-color:#999999;" width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr style="padding: 0;vertical-align: middle;">
+								<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+									<table class="wrapper" align="center" width="640" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: auto;line-height: 1.3;" cellpadding="0" cellspacing="0" border="0">
+										<tr style="padding: 0;vertical-align: middle;">
+											<td width="25%" class="email-footer-column" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;border-right:1px solid #FFFFFF;">
+												<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+													<tr style="padding: 0;vertical-align: middle;">
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:5px 10px 5px 0px;">
+															<!-- Content Block -->
+															<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+																<tr style="padding: 0;vertical-align: middle;">
+																	<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding-right:5px;width:30px;text-align:center;">
+																		<!--Use deep link for src attribute-->
+																		<a href="#" style="color: #c9048f;text-decoration: none;display:block;"><img style="outline:none;border: none;text-decoration:none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;width:28px;float:none;" src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/shipping-icon.png" alt="free shipping" /></a>
+																	</td>
+																	<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;"><h4 style="color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;padding:0;margin: 0;line-height: 1.3;word-break: normal;font-size:11px;color:#FFFFFF;font-weight:bold;">FREE SHIPPING</h4><span style="font-size:10px;line-height:10px;display:block;color:#FFFFFF;">All shippings on Weekdays</span></td>
+																</tr>
+															</table>
+															<!-- Content Block -->
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td width="25%" class="email-footer-column" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;border-right:1px solid #FFFFFF;">
+												<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+													<tr style="padding: 0;vertical-align: middle;">
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:5px 10px">
+															<!-- Content Block -->
+															<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+																<tr style="padding: 0;vertical-align: middle;">
+																	<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding-right:5px;width:30px;text-align:center;">
+																		<!--Use deep link for src attribute-->
+																		<a href="#" style="color: #c9048f;text-decoration: none;display:block;"><img style="outline:none;border: none;text-decoration:none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;width:28px;float:none;" src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/returns-icon.png" alt="hassle free returns" /></a>
+																	</td>
+																	<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;"><h4 style="color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;padding:0;margin: 0;line-height: 1.3;word-break: normal;font-size:11px;color:#FFFFFF;font-weight:bold;">HASSLE FREE RETURNS</h4><span style="font-size:10px;line-height:10px;display:block;color:#FFFFFF;"><a href="#" style="color:#FFFFFF!important;text-decoration:none!important;text-align:left;">Click here</a> to return an item</span></td>
+																</tr>
+															</table>
+															<!-- Content Block -->
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td width="25%" class="email-footer-column" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;border-right:1px solid #FFFFFF;">
+												<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+													<tr style="padding: 0;vertical-align: middle;">
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:5px 10px" class="email-footer-column-even">
+															<!-- Content Block -->
+															<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+																<tr style="padding: 0;vertical-align: middle;">
+																	<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding-right:5px;width:30px;text-align:center;">
+																		<!--Use deep link for src attribute-->
+																		<a href="#" style="color: #c9048f;text-decoration: none;display:block;"><img style="outline:none;border: none;text-decoration:none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;width:16px;float:none;margin:auto;" src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/cod-icon.png" alt="cash on delivery" /></a>
+																	</td>
+																	<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;"><h4 style="color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;padding:0;margin: 0;line-height: 1.3;word-break: normal;font-size:11px;color:#FFFFFF;font-weight:bold;">CASH ON DELIVERY</h4><span style="font-size:10px;line-height:10px;display:block;color:#FFFFFF;">Check COD Schedules</span></td>
+																</tr>
+															</table>
+															<!-- Content Block -->
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td width="25%" class="email-footer-column" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+												<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+													<tr style="padding: 0;vertical-align: middle;">
+														<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:5px 10px">
+															<!-- Content Block -->
+															<table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+																<tr style="padding: 0;vertical-align: middle;">
+																	<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding-right:5px;width:30px;text-align:center;">
+																		<!--Use deep link for src attribute-->
+																		<a href="#" style="color: #c9048f;text-decoration: none;display:block;"><img style="outline:none;border: none;text-decoration:none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;width:28px;float:none;" src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/brands-icon.png" alt="premium brands" /></a>
+																	</td>
+																	<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;"><h4 style="color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;padding:0;margin: 0;line-height: 1.3;word-break: normal;font-size:11px;color:#FFFFFF;font-weight:bold;">PREMIUM BRANDS</h4><span style="font-size:10px;line-height:10px;display:block;color:#FFFFFF;">Check our Exclusive Collections</span></td>
+																</tr>
+															</table>
+															<!-- Content Block -->
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<!-- END :: Footer Ads Section -->
+						<!-- STRAT :: Footer Socials Section -->
+						<table class="wrapper" align="center" width="640" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;line-height: 1.3;margin:auto;" cellpadding="0" cellspacing="0" border="0">
+							<tr style="padding: 0;vertical-align: middle;">
+								<td style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;">
+									<h4 style="font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;padding:0;margin: 0;line-height: 1.3;word-break: normal;color: #696a6d;font-size: 18px;text-align:center;padding-top:20px;padding-bottom:5px;">FOLLOW US ON</h4>
+									<table cellpadding="5" style="font-size: 14px;line-height:19px;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;line-height: 1.3;margin:auto;" cellspacing="0" border="0" align="center">
+										<tr style="padding: 0;vertical-align: middle;">
+											<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:5px;">
+												<!-- Facebook Link -->
+												<a href="#" title="Facebook" style="color: #c9048f;text-decoration: none;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/fb-icon.png" alt="" width="36" height="36" /></a>
+											</td>
+											<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:5px;">
+												<!-- Twitter Link -->
+												<a href="#" title="Tweeter" style="color: #c9048f;text-decoration: none;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/tweet-icon.png" alt="" width="36" height="36" /></a>
+											</td>
+											<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:5px;">
+												<!-- Link for Google Plus -->
+												<a href="#" title="Google Plus" style="color: #c9048f;text-decoration: none;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/gplus-icon.png" alt="" width="36" height="36" /></a>
+											</td>
+											<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:5px;">
+												<!-- Instagram Link -->
+												<a href="#" title="Instagram" style="color: #c9048f;text-decoration: none;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/insta-icon.png" alt="" width="36" height="36" /></a>
+											</td>
+											<td align="center" style="font-size: 14px;line-height:19px;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;border-collapse: collapse !important;border-spacing: 0;padding: 0;vertical-align: middle;color: #222222;font-family: 'Helvetica', 'Arial', sans-serif;font-weight: normal;margin: 0;line-height: 1.3;padding:5px;">
+												<!-- YouTube Link -->
+												<a href="#" title="YouTube" style="color: #c9048f;text-decoration: none;"><img src="https://raw.githubusercontent.com/JigneshRaval/html-emails/master/images/yt-icon.png" alt="" width="36" height="36" /></a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<!-- END :: Footer Socials Section -->
+						<!-- END :: Footer Section -->
+					</td>
+				</tr>
+			</table>
+			<!-- END :: Main Body -->
+		</body>
+	</html>
